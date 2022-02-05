@@ -1,27 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:project_resep/karedok.dart';
 
 class List extends StatelessWidget {
   const List({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Resep Makanan'),
-          backgroundColor: Colors.green,
-        ),
+     return Scaffold(
+      appBar: AppBar(
+        title: Text("Rumus Bangun Datar"),
+      ),
         body: ListView(
           children: <Widget>[
             Row(
               children: [
                 Container(
-                 decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30.0),
- ),
+                
                   margin: EdgeInsets.fromLTRB(15, 25, 25, 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
@@ -29,7 +26,7 @@ class List extends StatelessWidget {
                       Image.asset(
                         'assets/images/karedok.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
               
@@ -43,11 +40,11 @@ class List extends StatelessWidget {
                         child: ElevatedButton(
                           child: const Text('Detail Resep'),
                           onPressed: () {
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //       builder: (context) => const HalamanKedua()),
-                            // );
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Karedok()),
+                            );
                           },
                         ),
                       ),
@@ -57,7 +54,7 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(0 , 25 , 0 , 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
@@ -65,7 +62,7 @@ class List extends StatelessWidget {
                       Image.asset(
                         'assets/images/nasi.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
@@ -97,7 +94,7 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(15, 25, 25, 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
@@ -105,7 +102,7 @@ class List extends StatelessWidget {
                       Image.asset(
                         'assets/images/batagor.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
               
@@ -133,7 +130,7 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(0 , 25 , 0 , 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
@@ -141,7 +138,7 @@ class List extends StatelessWidget {
                       Image.asset(
                         'assets/images/seblak.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
@@ -173,20 +170,20 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(15, 25, 25, 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/karedok.jpg',
+                        'assets/images/empal.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
               
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        child: Text('Resep Karedok',
+                        child: Text('Resep Empal Gentong',
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                       ),
@@ -209,19 +206,19 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(0 , 25 , 0 , 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/nasi.jpg',
+                        'assets/images/ikan.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        child: Text('Resep Nasi Liwet',
+                        child: Text('Resep Ikan Mas',
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                       ),
@@ -249,20 +246,20 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(15, 25, 25, 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/karedok.jpg',
+                        'assets/images/nasiT.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
               
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        child: Text('Resep Karedok',
+                        child: Text('Resep Nasi Timbel',
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                       ),
@@ -285,19 +282,19 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(0 , 25 , 0 , 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/nasi.jpg',
+                        'assets/images/sotoB.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        child: Text('Resep Nasi Liwet',
+                        child: Text('Resep Soto Bandung',
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                       ),
@@ -325,20 +322,20 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(15, 25, 25, 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/karedok.jpg',
+                        'assets/images/sayur.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
               
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        child: Text('Resep Karedok',
+                        child: Text('Resep Sayur Asem',
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                       ),
@@ -361,19 +358,19 @@ class List extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.fromLTRB(0 , 25 , 0 , 0),
                   padding: EdgeInsets.all(15),
-                  color: Colors.lightGreenAccent,
+                  color: Colors.grey,
                   height: 200,
                   width: 180,
                   child: Column(
                     children: <Widget>[
                       Image.asset(
-                        'assets/images/nasi.jpg',
+                        'assets/images/bakakak.jpg',
                         width: 100,
-                        height: 100,
+                        height: 75,
                       ),
                       Padding(
                         padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-                        child: Text('Resep Nasi Liwet',
+                        child: Text('Resep Bakakak Ayam',
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                       ),
@@ -399,7 +396,6 @@ class List extends StatelessWidget {
            
           ],
         ),
-      ),
-    );
+      );
   }
 }

@@ -13,7 +13,7 @@ class HalamanPertama extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Halaman Pertama'),
+        title: Text('Selamat Datang'),
       ),
 
       body: Container(
@@ -34,7 +34,7 @@ class HalamanPertama extends StatelessWidget {
 
             Center(
                child: ElevatedButton(
-               child: Text('Mulai'),
+               child: Text('Lanjutkan'),
                 onPressed: () {
             Navigator.push(
               context,
